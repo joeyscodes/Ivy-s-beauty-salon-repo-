@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Ivy's Beauty Secret – Ladies Salon & Spa | Abu Dhabi</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<canvas id="pcv"></canvas>
+
+<div class="wa-float">
+  <span class="wa-lbl">Chat with Us</span>
+  <a href="https://wa.me/971509921215" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+</div>
+<button id="bktop" onclick="window.scrollTo({top:0,behavior:'smooth'})"><i class="fas fa-chevron-up"></i></button>
+
+<!-- NAVBAR -->
+<nav id="mainNav">
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html">
+      <img class="logo-img" id="navLogo" src="" alt="Ivy's Beauty Secret Logo"/>
+      <div class="nav-logo-text"><span class="t1">Ivy's Beauty Secret</span><span class="t2">Ladies Salon & Spa · Abu Dhabi</span></div>
+    </a>
+    <div class="nav-links">
+      <a href="index.html" id="nav-home" class="active">Home</a>
+      <a href="about.html" id="nav-about">About Us</a>
+      <a href="services.html" id="nav-services">Services</a>
+      <a href="gallery.html" id="nav-gallery">Gallery</a>
+      <a href="pricing.html" id="nav-pricing">Pricing</a>
+      <a href="testimonials.html" id="nav-testi">Testimonials</a>
+      <a href="contact.html" id="nav-contact">Contact</a>
+      <a href="contact.html" class="nav-cta"><i class="fas fa-calendar-check"></i> Book Now</a>
+    </div>
+    <div class="hamburger" onclick="toggleMob()"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+<div class="mob-menu" id="mobMenu">
+  <a href="index.html" onclick="closeMob()">Home</a>
+  <a href="about.html" onclick="closeMob()">About Us</a>
+  <a href="services.html" onclick="closeMob()">Services</a>
+  <a href="gallery.html" onclick="closeMob()">Gallery</a>
+  <a href="pricing.html" onclick="closeMob()">Pricing</a>
+  <a href="testimonials.html" onclick="closeMob()">Testimonials</a>
+  <a href="contact.html" onclick="closeMob()">Contact</a>
+  <a href="contact.html" onclick="closeMob()" style="background:var(--pink);color:#fff;border-radius:11px;margin-top:5px;"><i class="fas fa-calendar-check"></i> Book Appointment</a>
+</div>
+
+<!-- =========== HOME =========== -->
+
+<!-- PAGE: HOME -->
+<div class="page active" id="page-home">
+<div class="hero">
+    <div class="hblob b1"></div><div class="hblob b2"></div>
+    <div class="hero-inner">
+      <div>
+        <div class="hero-tag"><i class="fas fa-crown"></i> Be a Pampered Princess</div>
+        <h1 class="hero-h1"><span class="l1">Beauty That Makes You</span><br><span class="l2">Look Good.</span><br><span class="l3">Feel Amazing.</span></h1>
+        <p class="hero-sub">Premium Beauty & Spa Services Just for You</p>
+        <p class="hero-desc">Relax. Rejuvenate. Glow. Experience the perfect blend of beauty, care and luxury at Ivy's Beauty Secret — Abu Dhabi's finest ladies salon & spa.</p>
+        <div class="hero-btns">
+          <button class="btn-pink" href="contact.html"><i class="fas fa-calendar-check"></i> Book Appointment</button>
+          <button class="btn-outline" href="services.html">Our Services <i class="fas fa-arrow-right"></i></button>
+        </div>
+        <div class="hero-badges">
+          <div class="hbadge"><div class="hbadge-icon"><i class="fas fa-star"></i></div><span>Expert Beauticians</span></div>
+          <div class="hbadge"><div class="hbadge-icon"><i class="fas fa-shield-alt"></i></div><span>Safe & Hygienic</span></div>
+          <div class="hbadge"><div class="hbadge-icon"><i class="fas fa-gem"></i></div><span>Premium Products</span></div>
+        </div>
+      </div>
+      <div class="hero-img-side">
+        <div class="fcrd c1"><div class="fcrd-num">500+</div><div class="fcrd-lbl">Happy Clients</div></div>
+        <div class="fcrd c2"><div class="fcrd-num">5 ★</div><div class="fcrd-lbl">Rated Salon</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Services Preview -->
+  <section class="sec-svc">
+    <div class="si">
+      <div class="tc"><div class="stag">Our Services</div><h2 class="sh2">Pamper Yourself With Our <em>Exclusive Services</em></h2><p class="sp">From hair to nails, facials to massage — every service is crafted to make you feel like royalty.</p></div>
+      <div class="svc-grid">
+        <div class="svc-card reveal"><div class="svc-img" id="svcImg1" style="background:linear-gradient(135deg,#ffe9f4,#ffd6e7);background-size:cover;background-position:center;"></div><div class="svc-body"><div class="svc-ico"><i class="fas fa-cut"></i></div><h3>Hair Styling & Treatment</h3><p>Blowouts, balayage, highlights, keratin, hair spa and full treatments for every hair type.</p><a class="svc-link" href="services.html">View More <i class="fas fa-arrow-right"></i></a></div></div>
+        <div class="svc-card reveal"><div class="svc-img" id="svcImg2" style="background:linear-gradient(135deg,#fff0fa,#ffe9f4);background-size:cover;background-position:center;"></div><div class="svc-body"><div class="svc-ico"><i class="fas fa-magic"></i></div><h3>Makeup & Glam</h3><p>Party makeup, bridal makeovers, and everyday glam by our certified makeup artists.</p><a class="svc-link" href="services.html">View More <i class="fas fa-arrow-right"></i></a></div></div>
+        <div class="svc-card reveal"><div class="svc-img" id="svcImg3" style="background:linear-gradient(135deg,#e8f6ff,#d8f1ff);background-size:cover;background-position:center;"></div><div class="svc-body"><div class="svc-ico"><i class="fas fa-spa"></i></div><h3>Body Massage & Spa</h3><p>Full-body massages, hydra facials, collagen and botox treatments for total rejuvenation.</p><a class="svc-link" href="services.html">View More <i class="fas fa-arrow-right"></i></a></div></div>
+        <div class="svc-card reveal"><div class="svc-img" id="svcImg4" style="background:linear-gradient(135deg,#fce8ff,#f5d6ff);background-size:cover;background-position:center;"></div><div class="svc-body"><div class="svc-ico"><i class="fas fa-hand-sparkles"></i></div><h3>Manicure & Pedicure</h3><p>Gel polish, polygel extensions, spa manicure and pedicure for flawlessly beautiful nails.</p><a class="svc-link" href="services.html">View More <i class="fas fa-arrow-right"></i></a></div></div>
+        <div class="svc-card reveal"><div class="svc-img" id="svcImg5" style="background:linear-gradient(135deg,#fff5e8,#ffe9d4);background-size:cover;background-position:center;"></div><div class="svc-body"><div class="svc-ico"><i class="fas fa-eye"></i></div><h3>Lashes & Brows</h3><p>Eyebrow shaping, threading, lash extensions and brow tinting to frame your beautiful eyes.</p><a class="svc-link" href="services.html">View More <i class="fas fa-arrow-right"></i></a></div></div>
+        <div class="svc-card reveal"><div class="svc-img" id="svcImg6" style="background:linear-gradient(135deg,#fff0f5,#ffe4ef);background-size:cover;background-position:center;"></div><div class="svc-body"><div class="svc-ico"><i class="fas fa-leaf"></i></div><h3>Waxing & Threading</h3><p>Brazilian waxing, body waxing, threading — smooth, clean and expertly done every time.</p><a class="svc-link" href="services.html">View More <i class="fas fa-arrow-right"></i></a></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Offer -->
+  <section style="padding:0 0 84px;">
+    <div class="si" style="padding:0;">
+      <div class="offer-strip">
+        <div><h2><em>20% OFF</em>On Your First Visit</h2><p>Book your appointment today and enjoy our exclusive first-timer discount!</p></div>
+        <button class="btn-white" href="contact.html"><i class="fas fa-calendar-check"></i> Book Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="sec-testi">
+    <div class="si">
+      <div class="tc"><div class="stag">Client Love</div><h2 class="sh2">What Our <em>Clients Say</em></h2><p class="sp">Real words from our beautiful clients who trust us with their beauty.</p></div>
+      <div class="testi-grid">
+        <div class="tc-card reveal"><div class="tc-stars">★★★★★</div><p class="tc-text">"The best salon & spa experience ever! I love their professionalism and attention to detail. My hair has never looked this gorgeous!"</p><div class="tc-user"><div class="tc-av">C</div><div><div class="tc-name">Chioma A.</div><div class="tc-role">Regular Client</div></div></div></div>
+        <div class="tc-card reveal"><div class="tc-stars">★★★★★</div><p class="tc-text">"My go-to place for everything beauty. They make you feel so special every time. The facials here are absolutely divine!"</p><div class="tc-user"><div class="tc-av">J</div><div><div class="tc-name">Jennifer O.</div><div class="tc-role">Loyal Client</div></div></div></div>
+        <div class="tc-card reveal"><div class="tc-stars">★★★★★</div><p class="tc-text">"Clean environment, friendly staff and amazing results. Highly recommended to every lady in Abu Dhabi. Truly a hidden gem!"</p><div class="tc-user"><div class="tc-av">B</div><div><div class="tc-name">Bukky T.</div><div class="tc-role">Satisfied Client</div></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="sec-cta">
+    <div class="cta-inner"><h2>Ready to Be Pampered Like a Princess?</h2><p>Book your appointment today and let our expert beauticians transform you. You deserve to look good, feel good and be confident!</p>
+      <div class="cta-btns"><button class="btn-ws" href="contact.html"><i class="fas fa-calendar-check"></i> Book Appointment</button><a href="tel:+971509921215" class="btn-wo"><i class="fas fa-phone"></i> Call Us Now</a></div></div>
+  </section>
+
+  <!-- FOOTER HOME -->
+  <footer><div class="fi">
+    <div class="fb-brand"><div class="flogo"><img class="logo-img" id="footLogo1" src="" alt="Logo"/><div><span class="t1">Ivy's Beauty Secret</span><span class="t2">Ladies Salon & Spa</span></div></div><p>Where beauty meets luxury. We enhance your natural beauty and boost your confidence. Come in and be transformed by our expert team.</p><div class="fsoc"><a href="https://www.instagram.com/ivysbeautysecret/" target="_blank"><i class="fab fa-instagram"></i></a><a href="https://wa.me/971509921215" target="_blank"><i class="fab fa-whatsapp"></i></a><a href="tel:+971509921215"><i class="fas fa-phone"></i></a></div></div>
+    <div class="fcol"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div class="fcol"><h4>Our Services</h4><ul><li><a href="services.html">Hair Styling</a></li><li><a href="services.html">Makeup & Glam</a></li><li><a href="services.html">Body Massage</a></li><li><a href="services.html">Manicure & Pedicure</a></li><li><a href="services.html">Lashes & Brows</a></li><li><a href="services.html">Waxing & Threading</a></li></ul></div>
+    <div class="fcol"><h4>Contact Us</h4><div class="fcd"><i class="fas fa-phone"></i><a href="tel:+971509921215">+971 50 992 1215</a></div><div class="fcd"><i class="fab fa-whatsapp"></i><a href="https://wa.me/971509921215" target="_blank">+971 50 992 1215</a></div><div class="fcd"><i class="fab fa-instagram"></i><a href="https://www.instagram.com/ivysbeautysecret/" target="_blank">@ivysbeautysecret</a></div><div class="fcd"><i class="fas fa-map-marker-alt"></i><span>Al Tawakkal Typing Bldg, Mezzanine M03, Musaffah ME9, Abu Dhabi, UAE</span></div></div>
+  </div>
+  <div class="foot-bot"><p>© 2025 <em>Ivy's Beauty Secret</em> Ladies Salon & Spa. All Rights Reserved.</p><p style="color:#555;font-size:.7rem;">Be a Pampered Princess ♛</p></div>
+  </footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

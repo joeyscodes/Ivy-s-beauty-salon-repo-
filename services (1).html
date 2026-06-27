@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Our Services – Ivy's Beauty Secret | Ladies Salon & Spa Abu Dhabi</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<canvas id="pcv"></canvas>
+
+<div class="wa-float">
+  <span class="wa-lbl">Chat with Us</span>
+  <a href="https://wa.me/971509921215" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+</div>
+<button id="bktop" onclick="window.scrollTo({top:0,behavior:'smooth'})"><i class="fas fa-chevron-up"></i></button>
+
+<!-- NAVBAR -->
+<nav id="mainNav">
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html">
+      <img class="logo-img" id="navLogo" src="" alt="Ivy's Beauty Secret Logo"/>
+      <div class="nav-logo-text"><span class="t1">Ivy's Beauty Secret</span><span class="t2">Ladies Salon & Spa · Abu Dhabi</span></div>
+    </a>
+    <div class="nav-links">
+      <a href="index.html" id="nav-home">Home</a>
+      <a href="about.html" id="nav-about">About Us</a>
+      <a href="services.html" id="nav-services" class="active">Services</a>
+      <a href="gallery.html" id="nav-gallery">Gallery</a>
+      <a href="pricing.html" id="nav-pricing">Pricing</a>
+      <a href="testimonials.html" id="nav-testi">Testimonials</a>
+      <a href="contact.html" id="nav-contact">Contact</a>
+      <a href="contact.html" class="nav-cta"><i class="fas fa-calendar-check"></i> Book Now</a>
+    </div>
+    <div class="hamburger" onclick="toggleMob()"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+<div class="mob-menu" id="mobMenu">
+  <a href="index.html" onclick="closeMob()">Home</a>
+  <a href="about.html" onclick="closeMob()">About Us</a>
+  <a href="services.html" onclick="closeMob()">Services</a>
+  <a href="gallery.html" onclick="closeMob()">Gallery</a>
+  <a href="pricing.html" onclick="closeMob()">Pricing</a>
+  <a href="testimonials.html" onclick="closeMob()">Testimonials</a>
+  <a href="contact.html" onclick="closeMob()">Contact</a>
+  <a href="contact.html" onclick="closeMob()" style="background:var(--pink);color:#fff;border-radius:11px;margin-top:5px;"><i class="fas fa-calendar-check"></i> Book Appointment</a>
+</div>
+
+<!-- =========== HOME =========== -->
+
+<!-- PAGE: SERVICES -->
+<div class="page active" id="page-services">
+<div class="inner-hero"><div class="stag" style="justify-content:center;margin:0 auto 10px;">What We Offer</div><h1>Our <em>Services</em></h1><p>A full range of premium beauty and spa treatments crafted exclusively for ladies.</p><div class="breadcrumb"><span href="index.html">Home</span> / Services</div></div>
+  <section style="background:linear-gradient(180deg,#fff 0%,var(--lavender) 50%,#fff 100%);">
+    <div class="si">
+      <div class="svc-list-grid">
+        <div class="slc reveal"><h3><i class="fas fa-cut"></i> Hair Services</h3><ul><li>Haircut & Hair Trim</li><li>Hairstyling & Blowouts</li><li>Balayage & Highlights</li><li>Peekaboo & Lowlights</li><li>Ombre Hair Coloring</li><li>Root Touch-up</li><li>Hair Extensions</li><li>Organic Keratin Treatment</li><li>Hair Spa</li><li>Shampoo & Conditioning</li><li>Hair Threading</li></ul></div>
+        <div class="slc reveal"><h3><i class="fas fa-spa"></i> Skin & Facial</h3><ul><li>Acne Treatments</li><li>Hydra Facial</li><li>Facial & Deep Cleansing</li><li>Collagen Treatment</li><li>Botox Treatment</li><li>Bleaching</li><li>Body Massage</li><li>Full Body Spa</li></ul></div>
+        <div class="slc reveal"><h3><i class="fas fa-hand-sparkles"></i> Nail Services</h3><ul><li>Manicure & Manicure Spa</li><li>Pedicure & Pedicure Spa</li><li>Gel Polish</li><li>Polygel Extensions</li><li>Gel Extensions</li></ul></div>
+        <div class="slc reveal"><h3><i class="fas fa-magic"></i> Makeup & Bridal</h3><ul><li>Party Makeup</li><li>Makeovers</li><li>Bridal Services</li><li>Everyday Glam Makeup</li><li>Full Bridal Package</li></ul></div>
+        <div class="slc reveal"><h3><i class="fas fa-eye"></i> Brow & Lash</h3><ul><li>Eyebrow Shaping</li><li>Eyebrow Threading</li><li>Lash Extensions</li><li>Brow Tinting</li></ul></div>
+        <div class="slc reveal"><h3><i class="fas fa-leaf"></i> Waxing & Threading</h3><ul><li>Brazilian Waxing</li><li>Body Waxing</li><li>Full Body Threading</li><li>Face Threading</li></ul></div>
+      </div>
+      <div style="text-align:center;margin-top:44px;"><button class="btn-pink" href="contact.html"><i class="fas fa-calendar-check"></i> Book Any Service</button></div>
+    </div>
+  </section>
+  <section class="sec-cta"><div class="cta-inner"><h2>Treat Yourself Today</h2><p>Every woman deserves to be pampered. Call or WhatsApp us to book your preferred service.</p><div class="cta-btns"><a href="https://wa.me/971509921215" target="_blank" class="btn-ws"><i class="fab fa-whatsapp"></i> WhatsApp Us</a><a href="tel:+971509921215" class="btn-wo"><i class="fas fa-phone"></i> +971 50 992 1215</a></div></div></section>
+  <footer><div class="fi">
+    <div class="fb-brand"><div class="flogo"><img class="logo-img" id="footLogo3" src="" alt="Logo"/><div><span class="t1">Ivy's Beauty Secret</span><span class="t2">Ladies Salon & Spa</span></div></div><p>Where beauty meets luxury.</p><div class="fsoc"><a href="https://www.instagram.com/ivysbeautysecret/" target="_blank"><i class="fab fa-instagram"></i></a><a href="https://wa.me/971509921215" target="_blank"><i class="fab fa-whatsapp"></i></a></div></div>
+    <div class="fcol"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div class="fcol"><h4>Services</h4><ul><li><a href="services.html">Hair Styling</a></li><li><a href="services.html">Makeup</a></li><li><a href="services.html">Spa & Massage</a></li><li><a href="services.html">Nails</a></li></ul></div>
+    <div class="fcol"><h4>Contact</h4><div class="fcd"><i class="fas fa-phone"></i><a href="tel:+971509921215">+971 50 992 1215</a></div><div class="fcd"><i class="fab fa-whatsapp"></i><a href="https://wa.me/971509921215" target="_blank">WhatsApp Us</a></div><div class="fcd"><i class="fab fa-instagram"></i><a href="https://www.instagram.com/ivysbeautysecret/" target="_blank">@ivysbeautysecret</a></div><div class="fcd"><i class="fas fa-map-marker-alt"></i><span>Musaffah ME9, Abu Dhabi UAE</span></div></div>
+  </div><div class="foot-bot"><p>© 2025 <em>Ivy's Beauty Secret</em> Ladies Salon & Spa. All Rights Reserved.</p><p style="color:#555;font-size:.7rem;">Be a Pampered Princess ♛</p></div></footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

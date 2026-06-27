@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>About Us – Ivy's Beauty Secret | Ladies Salon & Spa Abu Dhabi</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<canvas id="pcv"></canvas>
+
+<div class="wa-float">
+  <span class="wa-lbl">Chat with Us</span>
+  <a href="https://wa.me/971509921215" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+</div>
+<button id="bktop" onclick="window.scrollTo({top:0,behavior:'smooth'})"><i class="fas fa-chevron-up"></i></button>
+
+<!-- NAVBAR -->
+<nav id="mainNav">
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html">
+      <img class="logo-img" id="navLogo" src="" alt="Ivy's Beauty Secret Logo"/>
+      <div class="nav-logo-text"><span class="t1">Ivy's Beauty Secret</span><span class="t2">Ladies Salon & Spa · Abu Dhabi</span></div>
+    </a>
+    <div class="nav-links">
+      <a href="index.html" id="nav-home">Home</a>
+      <a href="about.html" id="nav-about" class="active">About Us</a>
+      <a href="services.html" id="nav-services">Services</a>
+      <a href="gallery.html" id="nav-gallery">Gallery</a>
+      <a href="pricing.html" id="nav-pricing">Pricing</a>
+      <a href="testimonials.html" id="nav-testi">Testimonials</a>
+      <a href="contact.html" id="nav-contact">Contact</a>
+      <a href="contact.html" class="nav-cta"><i class="fas fa-calendar-check"></i> Book Now</a>
+    </div>
+    <div class="hamburger" onclick="toggleMob()"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+<div class="mob-menu" id="mobMenu">
+  <a href="index.html" onclick="closeMob()">Home</a>
+  <a href="about.html" onclick="closeMob()">About Us</a>
+  <a href="services.html" onclick="closeMob()">Services</a>
+  <a href="gallery.html" onclick="closeMob()">Gallery</a>
+  <a href="pricing.html" onclick="closeMob()">Pricing</a>
+  <a href="testimonials.html" onclick="closeMob()">Testimonials</a>
+  <a href="contact.html" onclick="closeMob()">Contact</a>
+  <a href="contact.html" onclick="closeMob()" style="background:var(--pink);color:#fff;border-radius:11px;margin-top:5px;"><i class="fas fa-calendar-check"></i> Book Appointment</a>
+</div>
+
+<!-- =========== HOME =========== -->
+
+<!-- PAGE: ABOUT -->
+<div class="page active" id="page-about">
+<div class="about-hero"><div class="stag" style="justify-content:center;margin:0 auto 10px;">Our Story</div><h1>About <em>Ivy's Beauty Secret</em></h1><p>A sanctuary where every woman is treated like a queen.</p><div class="breadcrumb"><a href="index.html" style="color:var(--pink);font-weight:600;text-decoration:none;">Home</a> / About Us</div></div>
+  <section><div class="si"><div class="about-grid">
+    <div class="about-imgs reveal">
+      <div class="ai" id="aboutImg2a" style="background-image:url('img/about-card1.jpg');"></div>
+      <div class="ai" id="aboutImg2b" style="background-image:url('img/about-card2.jpg');"></div>
+      <div class="ai wide" id="aboutImg2c" style="background-image:url('img/about-card3.jpg');"></div>
+      <div class="about-float"><div class="af-num">5+ Yrs</div><div class="af-lbl">of Excellence</div></div>
+    </div>
+    <div class="reveal">
+      <div class="stag">About Us</div><h2 class="sh2">At Ivy's, Every Woman Is <em>a Queen</em></h2>
+      <p style="font-size:.9rem;color:#888;line-height:1.75;margin-bottom:18px;">At Ivy's Beauty Secret, we believe every woman is a queen. Our mission is to bring out the best in you with top-notch beauty and spa services in a relaxing, luxurious environment right here in Abu Dhabi.</p>
+      <p style="font-size:.9rem;color:#888;line-height:1.75;margin-bottom:26px;">Our team of skilled, certified beauticians use only premium products to ensure you leave feeling refreshed, confident and absolutely beautiful. From the moment you walk in, you are treated like royalty.</p>
+      <div class="why-list">
+        <div class="why-item"><div class="wi-ico"><i class="fas fa-certificate"></i></div><div><h4>Skilled & Certified Beauticians</h4><p>Our team holds professional certifications and trains continuously on the latest techniques.</p></div></div>
+        <div class="why-item"><div class="wi-ico"><i class="fas fa-leaf"></i></div><div><h4>High Quality Products Only</h4><p>We use only top-tier, skin-safe beauty products for every single treatment we offer.</p></div></div>
+        <div class="why-item"><div class="wi-ico"><i class="fas fa-shield-alt"></i></div><div><h4>Clean & Relaxing Environment</h4><p>Our salon maintains the highest standards of hygiene and comfort at all times.</p></div></div>
+        <div class="why-item"><div class="wi-ico"><i class="fas fa-heart"></i></div><div><h4>100% Customer Satisfaction</h4><p>Your happiness is our priority. We go above and beyond for every client every visit.</p></div></div>
+      </div>
+    </div>
+  </div></div></section>
+  <section class="sec-cta"><div class="cta-inner"><h2>Come Experience the Difference</h2><p>Book your appointment at Ivy's Beauty Secret and discover why we're Abu Dhabi's most loved ladies salon.</p><div class="cta-btns"><button class="btn-ws" href="contact.html"><i class="fas fa-calendar-check"></i> Book Now</button><a href="tel:+971509921215" class="btn-wo"><i class="fas fa-phone"></i> +971 50 992 1215</a></div></div></section>
+  <footer><div class="fi">
+    <div class="fb-brand"><div class="flogo"><img class="logo-img" id="footLogo2" src="" alt="Logo"/><div><span class="t1">Ivy's Beauty Secret</span><span class="t2">Ladies Salon & Spa</span></div></div><p>Where beauty meets luxury.</p><div class="fsoc"><a href="https://www.instagram.com/ivysbeautysecret/" target="_blank"><i class="fab fa-instagram"></i></a><a href="https://wa.me/971509921215" target="_blank"><i class="fab fa-whatsapp"></i></a></div></div>
+    <div class="fcol"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div class="fcol"><h4>Services</h4><ul><li><a href="services.html">Hair Styling</a></li><li><a href="services.html">Makeup</a></li><li><a href="services.html">Spa & Massage</a></li><li><a href="services.html">Nails</a></li></ul></div>
+    <div class="fcol"><h4>Contact</h4><div class="fcd"><i class="fas fa-phone"></i><a href="tel:+971509921215">+971 50 992 1215</a></div><div class="fcd"><i class="fab fa-whatsapp"></i><a href="https://wa.me/971509921215" target="_blank">WhatsApp Us</a></div><div class="fcd"><i class="fab fa-instagram"></i><a href="https://www.instagram.com/ivysbeautysecret/" target="_blank">@ivysbeautysecret</a></div><div class="fcd"><i class="fas fa-map-marker-alt"></i><span>Musaffah ME9, Abu Dhabi UAE</span></div></div>
+  </div><div class="foot-bot"><p>© 2025 <em>Ivy's Beauty Secret</em> Ladies Salon & Spa. All Rights Reserved.</p><p style="color:#555;font-size:.7rem;">Be a Pampered Princess ♛</p></div></footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
